@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Logo from "./assets/Portfolio.svg"
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +12,7 @@ function App() {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src={Logo}
               className="h-8"
               alt="Flowbite Logo"
             />
