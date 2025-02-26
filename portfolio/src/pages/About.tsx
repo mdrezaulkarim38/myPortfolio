@@ -6,7 +6,7 @@ function About() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Delay to trigger the animation
+    }, 100);
     return () => clearTimeout(timer);
   }, []);
 
