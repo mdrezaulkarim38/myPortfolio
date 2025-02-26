@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
