@@ -24,9 +24,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-teal-500 p-25 ">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r bg-gray-100 pt-25 pb-10 ">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">Contact Me ❤️</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">Contact Me</h2>
         <p className="text-lg text-gray-700 text-center mb-4">Love to hear from you! Get in touch.</p>
         <form ref={form} onSubmit={sendEmail}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

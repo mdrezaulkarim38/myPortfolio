@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import ProfolioImage from "./../assets/supermanshuvo.jpg";
 
 function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center p-6">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10">
       <div className="w-full md:w-1/2 flex justify-center">
         <img
           src={ProfolioImage}
@@ -16,15 +17,16 @@ function Home() {
           Welcome to <span className="text-blue-600">My Portfolio</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600 sm:text-xl">
-          I am a passionate developer creating modern and responsive web applications.
+          I am a passionate developer creating modern and responsive web
+          applications.
         </p>
         <div className="mt-6">
-          <a
-            href="#projects"
+          <Link
+            to="/project"
             className="px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
           >
             View My Work
-          </a>
+          </Link>
         </div>
       </div>
     </section>

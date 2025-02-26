@@ -1,7 +1,9 @@
 function Project() {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center p-6">
-            <h2>Projects</h2>
+        <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10">
+            <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8 transition-opacity duration-1000">
+                <h2>Projects</h2>
+            </div>
         </section>
     );
 }
