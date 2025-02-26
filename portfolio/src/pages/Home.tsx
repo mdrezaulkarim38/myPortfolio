@@ -3,7 +3,6 @@ import ProfolioImage from "./../assets/supermanshuvo.jpg";
 function Home() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center p-6">
-      {/* Left Side: Image */}
       <div className="w-full md:w-1/2 flex justify-center">
         <img
           src={ProfolioImage}
@@ -12,7 +11,6 @@ function Home() {
         />
       </div>
 
-      {/* Right Side: Text Content */}
       <div className="w-full md:w-1/2 mt-6 md:mt-0 md:text-left px-6">
         <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           Welcome to <span className="text-blue-600">My Portfolio</span>
