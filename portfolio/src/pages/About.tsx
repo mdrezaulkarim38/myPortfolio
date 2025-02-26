@@ -11,7 +11,7 @@ function About() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center py-20 px-4">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center pt-20 pb-10 px-4">
       <div
         className={`max-w-4xl w-full bg-white rounded-2xl shadow-2xl p-10 transition-all duration-1000 transform ${
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
