@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import ProfolioImage from "./../assets/supermanshuvo.jpg";
+import { TypeAnimation } from "react-type-animation";
+import ProfolioImage from "./../assets/MyImage.jpeg";
 
 function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10">
-      <div className="w-full md:w-1/2 flex justify-center">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10 px-6">
+      <div className="w-full md:w-1/2 flex justify-center mb-5">
         <img
           src={ProfolioImage}
           alt="Profile"
@@ -12,14 +13,27 @@ function Home() {
         />
       </div>
 
-      <div className="w-full md:w-1/2 mt-6 md:mt-0 md:text-left px-6">
-        <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          Welcome to <span className="text-blue-600">My Portfolio</span>
+      <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-gray-800">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <TypeAnimation
+            sequence={[
+              "Hi, I am Rezaul Karim",
+              1000,
+              "A Passionate Developer",
+              1000,
+              "Welcome to My Portfolio!",
+              1000,
+            ]}
+            speed={50}
+            className="text-blue-600"
+            repeat={Infinity}
+          />
         </h1>
-        <p className="mt-4 text-lg text-gray-600 sm:text-xl">
-          I am a passionate developer creating modern and responsive web
-          applications.
+
+        <p className="mt-4 text-lg text-gray-600 sm:text-xl text-center md:text-left">
+          I am a passionate developer creating modern and responsive web applications.
         </p>
+
         <div className="mt-6">
           <Link
             to="/project"
