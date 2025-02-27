@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import ProfolioImage from "./../assets/MyImage.jpeg";
+import BackgroundImage from "./../assets/backgroundImage.jpg";
 
 function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10 px-6">
+    <section
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 text-center pt-25 pb-10 px-6"
+      style={{
+        backgroundImage: `url(${BackgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="w-full md:w-1/2 flex justify-center mb-5">
         <img
           src={ProfolioImage}
@@ -13,7 +22,7 @@ function Home() {
         />
       </div>
 
-      <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-gray-800">
+      <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-gray-800 bg-white bg-opacity-80 p-6 rounded-lg">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
           <TypeAnimation
             sequence={[
@@ -31,7 +40,7 @@ function Home() {
         </h1>
 
         <p className="mt-4 text-lg text-gray-600 sm:text-xl text-center md:text-left">
-          I am a passionate developer creating modern and responsive web applications.
+        I am a passionate developer creating modern and responsive web applications using ASP.NET Core REST API for the backend and React.js for the frontend.
         </p>
 
         <div className="mt-6">

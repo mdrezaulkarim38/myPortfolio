@@ -1,31 +1,49 @@
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+import BackgroundImage from "./../assets/backgroundImage.jpg";
 
 const Contact = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const form = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
       emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_USER_ID")
         .then(
           (result) => {
             console.log(result.text);
-            alert('Message sent successfully!');
+            alert("Message sent successfully!");
           },
           (error) => {
             console.log(error.text);
-            alert('Failed to send message. Please try again later.');
+            alert("Failed to send message. Please try again later.");
           }
         );
     }
   };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r bg-gray-100 pt-25 pb-10 ">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r bg-gray-100 pt-25 pb-10" style={{
+      backgroundImage: `url(${BackgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
+      <div
+        className={`bg-white shadow-lg rounded-lg p-8 max-w-lg w-full transform transition-opacity duration-700 ${
+          isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        }`}
+      >
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">Contact Me</h2>
         <p className="text-lg text-gray-700 text-center mb-4">Love to hear from you! Get in touch.</p>
         <form ref={form} onSubmit={sendEmail}>
@@ -75,7 +93,10 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+          >
             Send Message
           </button>
         </form>

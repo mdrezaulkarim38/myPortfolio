@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import BackgroundImage from "./../assets/backgroundImage.jpg";
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +12,12 @@ function About() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center pt-20 pb-10 px-4">
+    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center pt-20 pb-10 px-4" style={{
+      backgroundImage: `url(${BackgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
       <div
         className={`max-w-4xl w-full bg-white rounded-2xl shadow-2xl p-10 transition-all duration-1000 transform ${
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -110,7 +116,7 @@ function About() {
 
         <div className="text-lg text-gray-700 mb-6 leading-relaxed text-left">
           <p className="mb-4">
-            Currently, I am a student at{" "}
+            Currently, I am also a student at{" "}
             <span className="font-semibold text-blue-600">
               Southeast University{" "}
             </span>
