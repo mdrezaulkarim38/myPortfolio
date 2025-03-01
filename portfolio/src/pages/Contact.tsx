@@ -35,39 +35,38 @@ const Contact = () => {
         </p>
 
         <div className="flex flex-col space-y-4">
-          
           {/* Email */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center justify-center space-x-3 md:space-x-4 flex-wrap">
             <FaEnvelope className="text-red-600 text-2xl" />
             <a
               href="mailto:mdrezaulkarim31295@gmail.com"
-              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300"
+              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300 break-all md:break-normal"
             >
               mdrezaulkarim31295@gmail.com
             </a>
           </div>
 
           {/* LinkedIn */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center justify-center space-x-3 md:space-x-4 flex-wrap">
             <FaLinkedin className="text-blue-600 text-3xl" />
             <a
               href="https://www.linkedin.com/in/supermanshuvo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300"
+              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300 break-all md:break-normal"
             >
               linkedin.com/in/supermanshuvo
             </a>
           </div>
 
           {/* GitHub */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center justify-center space-x-3 md:space-x-4 flex-wrap">
             <FaGithub className="text-gray-800 text-3xl" />
             <a
               href="https://github.com/mdrezaulkarim38"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300"
+              className="text-lg text-gray-800 font-semibold hover:text-blue-600 transition duration-300 break-all md:break-normal"
             >
               github.com/mdrezaulkarim38
             </a>
