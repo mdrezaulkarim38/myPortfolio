@@ -49,6 +49,8 @@ function Project() {
     >
       <div className="max-w-5xl w-full bg-white bg-opacity-90 rounded-lg shadow-xl p-10">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-8">Projects</h2>
+        <p>These are the projects I have worked on for my company. Each project aims to solve a specific problem and improve efficiency.</p>
+        <hr />
 
         {/* Grid Layout for Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
