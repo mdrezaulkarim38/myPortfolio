@@ -1,15 +1,5 @@
 import { FaDatabase, FaServer, FaTools, FaCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
-import {
-  SiReact,
-  SiTailwindcss,
-  SiBootstrap,
-  SiMongodb,
-  SiDocker,
-  SiPostman,
-  SiGit,
-  SiMysql,
-  SiOracle,
-} from "react-icons/si";
+import { SiReact } from "react-icons/si";
 
 function About() {
   return (
