@@ -1,4 +1,4 @@
-import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt, FaPhone, FaFacebook } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -22,12 +22,6 @@ const Contact = () => {
               label="Email"
               value="mdrezaulkarim31295@gmail.com"
               href="mailto:mdrezaulkarim31295@gmail.com"
-            />
-            <ContactItem
-              icon={<FaPhone />}
-              label="Phone"
-              value="+880 1234 567890"
-              href="tel:+8801234567890"
             />
             <ContactItem
               icon={<FaMapMarkerAlt />}
