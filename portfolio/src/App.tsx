@@ -12,8 +12,8 @@ import {
   FaRegCircleCheck,
   FaServer,
 } from "react-icons/fa6";
-import { SiDocker, SiDotnet, SiGit, SiReact, SiRedis } from "react-icons/si";
-import FormalPhoto from "./assets/rezaul-formal.png";
+import { SiDocker, SiDotnet, SiGit, SiReact } from "react-icons/si";
+import FormalPhoto from "./assets/rezaul-profile.jpg";
 import "./Portfolio.css";
 
 type Skill = {
@@ -39,37 +39,37 @@ type Experience = {
 const skills: Skill[] = [
   {
     name: "C#",
-    detail: "Strong business logic, modular code, and maintainable backend workflows.",
+    detail: "SOLID principles, clean architecture, repository pattern, and maintainable enterprise logic.",
     icon: <FaCodeBranch />,
   },
   {
-    name: ".NET Core",
-    detail: "REST APIs, ERP modules, reporting systems, and production-grade services.",
+    name: "ASP.NET Core",
+    detail: "MVC, REST API, Web API, EF Core, Dapper — scalable ERP, CRM, and accounting systems.",
     icon: <SiDotnet />,
   },
   {
     name: "React",
-    detail: "Clean user interfaces for dashboards, admin tools, and business workflows.",
+    detail: "React.js, TypeScript, JavaScript, Bootstrap — dashboards, portals, and business workflows.",
     icon: <SiReact />,
   },
   {
-    name: "Redis",
-    detail: "Useful for caching, faster data access, and improving performance in scalable systems.",
-    icon: <SiRedis />,
+    name: "Semantic Kernel",
+    detail: "Local-LLM orchestration, ChatHistory memory, SSE streaming, and prompt engineering.",
+    icon: <FaBrain />,
   },
   {
     name: "SQL Server",
-    detail: "Structured data design, reporting, and reliable business operations.",
+    detail: "SQL Server, Oracle, SQLite, MongoDB — data modeling, reporting, reliable operations.",
     icon: <FaRegCircleCheck />,
   },
   {
     name: "Docker",
-    detail: "Consistent development environments and smoother deployment pipelines.",
+    detail: "Docker, GitHub Actions, Jenkins, IIS — consistent environments and delivery pipelines.",
     icon: <SiDocker />,
   },
   {
-    name: "Hangfire",
-    detail: "Background jobs, automation tasks, and dependable scheduled processing.",
+    name: "Resilience",
+    detail: "Polly retry and circuit breaker, Serilog logging, and ASP.NET Core health checks.",
     icon: <FaBrain />,
   },
   {
@@ -79,7 +79,7 @@ const skills: Skill[] = [
   },
   {
     name: "REST API",
-    detail: "Designing predictable, maintainable APIs for frontend, integration, and business services.",
+    detail: "FluentValidation, output caching, rate limiting, and predictable API design.",
     icon: <FaServer />,
   },
 ];
@@ -90,24 +90,48 @@ const experiences: Experience[] = [
     role: "Software Developer",
     period: "October 2025 - Present",
     summary:
-      "Working on real estate ERP systems with ASP.NET Core, scalable APIs, frontend modules, and performance-focused improvements across full-stack business features.",
+      "Developing enterprise Real Estate ERP with ASP.NET Core and SQL Server. Built scalable REST APIs, a customer feedback and self-service portal, full-stack modules end-to-end, plus query and API performance optimization with code reviews and structured testing.",
   },
   {
     company: "Synergy Interface Ltd",
     role: "Software Developer",
     period: "April 2023 - September 2025",
     summary:
-      "Built and maintained CRM, insurance, accounting, and inventory systems using ASP.NET Core, React, and SQL Server with strong emphasis on business workflows and reporting.",
+      "Synergy CRM (ASP.NET Core 8 + React), Smart Life Insurance (FA/UM/BM, premium calculation, dynamic reporting), modular Accounting Software, and AccuStock inventory with double-entry accounting, chat, and email reporting.",
   },
 ];
 
 const projects: Project[] = [
+  {
+    title: "Smart FAQ Chatbot",
+    type: "AI Lab",
+    detail:
+      "Context-aware multi-turn FAQ chatbot — ASP.NET Core 10 Clean Architecture, Semantic Kernel, Ollama (qwen3:8b), React 19 + TS. SSE streaming, EF Core + SQLite sessions, Polly, rate limiting, Serilog.",
+    link: "https://github.com/mdrezaulkarim38/smart-faq-chatbot",
+  },
+  {
+    title: "AI Text Summarizer",
+    type: "AI Lab",
+    detail:
+      "Full-stack summarization with sync + SSE streaming, Polly resilience, Serilog observability, FluentValidation, SHA-256 output caching, and fully local privacy-preserving architecture.",
+    link: "https://github.com/mdrezaulkarim38/ai-text-summarizer",
+  },
   {
     title: "AI Email Assistant API",
     type: "AI Lab",
     detail:
       "An ASP.NET Core + Ollama project for generating email drafts, tone rewrites, and reply suggestions with structured logging.",
     link: "https://github.com/mdrezaulkarim38/AiEmailAssistant",
+  },
+];
+
+const businessProjects: Project[] = [
+  {
+    title: "Selieo — Real Estate ERP",
+    type: "Business System",
+    detail:
+      "Complete real estate ERP — enterprise modules with scalable ASP.NET Core REST APIs, role-based workflows, reporting, and a customer feedback and self-service portal.",
+    link: "https://selieo.com/",
   },
   {
     title: "ERP for SME",
@@ -161,6 +185,7 @@ function App() {
 
         <nav className="site-nav">
           <a href="#home">Home</a>
+          <a href="#ai-work">AI Work</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
@@ -180,14 +205,14 @@ function App() {
       <main>
         <section id="home" className="hero section">
           <div className="hero__content">
-            <p className="eyebrow">Full-Stack Software Engineer</p>
-            <h1>MD Rezaul Karim builds reliable business software with .NET, React, and practical AI exploration.</h1>
+            <p className="eyebrow">Full-Stack Software Engineer — .NET · React · AI</p>
+            <h1>MD Rezaul Karim builds reliable business software with .NET, React, and local-LLM AI.</h1>
             <p className="hero__lead">
-              I’m MD Rezaul Karim, a full-stack developer with 3+ years of experience building ERP, CRM, accounting, and insurance systems using .NET Core, React, and SQL Server while exploring AI and LLM integrations in practical product workflows.
+              I’m MD Rezaul Karim, a full-stack developer with 3+ years of experience building ERP, CRM, accounting, and insurance systems using ASP.NET Core, C#, SQL Server, and React. I apply SOLID, Repository pattern, and clean architecture — recently extended into AI engineering with Semantic Kernel and Ollama.
             </p>
 
             <div className="hero__headlineCard">
-              <p>Full-Stack Developer | .NET Core & React | Exploring AI/LLM</p>
+              <p>Full-Stack Developer | .NET Core & React | Semantic Kernel + Ollama</p>
             </div>
 
             <div className="hero__actions">
@@ -214,6 +239,28 @@ function App() {
               <strong>3+ Years</strong>
               <span>Professional software development experience</span>
             </div>
+          </div>
+        </section>
+
+        <section id="ai-work" className="section section--ai">
+          <div className="section-heading">
+            <p className="eyebrow">AI Work First</p>
+            <h2>Local-LLM apps with production-grade .NET engineering.</h2>
+          </div>
+
+          <div className="ai-grid">
+            {projects.map((project, index) => (
+              <article key={project.title} className="ai-card">
+                <span className="ai-card__num">0{index + 1} — {project.type}</span>
+                <h3>{project.title}</h3>
+                <p>{project.detail}</p>
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    View on GitHub <FaArrowRight />
+                  </a>
+                ) : null}
+              </article>
+            ))}
           </div>
         </section>
 
@@ -250,13 +297,13 @@ function App() {
 
         <section id="projects" className="section">
           <div className="section-heading">
-            <p className="eyebrow">Beta Projects</p>
-            <h2>AI experiments and product-minded engineering.</h2>
+            <p className="eyebrow">More Work</p>
+            <h2>Business systems running in production.</h2>
           </div>
 
           <div className="project-layout">
             <div className="project-list">
-              {projects.map((project) => (
+              {businessProjects.map((project) => (
                 <article key={project.title} className="project-card">
                   <span className="project-card__type">{project.type}</span>
                   <h3>{project.title}</h3>
@@ -347,7 +394,7 @@ function App() {
               </div>
               <div className="contact-item">
                 <span className="contact-item__label">Location</span>
-                <p>Rampura, Dhaka-1219, Bangladesh</p>
+                <p>Dhaka, Bangladesh</p>
               </div>
               <div className="contact-item">
                 <span className="contact-item__label">LinkedIn</span>
