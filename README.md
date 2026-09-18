@@ -28,7 +28,7 @@ This repository contains the source code for my personal portfolio website — a
 | **AI Engineering** | Semantic Kernel, Ollama (qwen3:8b), SSE streaming, ChatHistory memory, prompt engineering |
 | **Practices** | SOLID, Clean Architecture, Repository Pattern, Polly resilience, Serilog, FluentValidation, Health Checks, Rate Limiting, Output Caching |
 | **DevOps** | Docker, GitHub Actions, Jenkins, IIS, Firebase Hosting |
-| **Current Role** | Software Developer @ iTech Velocity (Oct 2025 – Present) — Real Estate ERP (Selieo) |
+| **Current Role** | Software Developer @ iTech Velocity (Oct 2025 – Present) — Real Estate ERP (internal enterprise system) |
 | **Previous** | Software Developer @ Synergy Interface Ltd (Apr 2023 – Sep 2025) — CRM, Insurance, Accounting, Inventory |
 | **Availability** | Open to full-time engineering roles and meaningful product work |
 
@@ -48,8 +48,9 @@ If you have a business process that needs software, I can take it from idea → 
 
 **How I work:** clear requirements → dependable API layer → practical user workflows → scalable architecture so future features don't require rewrites. Reliable communication, maintainable code, and documentation included.
 
-**Recent production work:**
-- [Selieo — Real Estate ERP](https://selieo.com/) — enterprise modules, scalable REST APIs, role-based workflows, reporting + customer self-service portal
+**Recent work:**
+- **Real Estate ERP @ iTech Velocity (Professional)** — enterprise modules, scalable ASP.NET Core REST APIs, role-based workflows, reporting + customer feedback and self-service portal
+- [Selieo — Real Estate ERP (Personal Project, independent)](https://selieo.com/) — my own build: enterprise-style modules, scalable APIs, role-based workflows, reporting + self-service portal
 - [ERP for SME](https://shohug-enterprise.web.app/) — inventory, auth, role-based access, operational reporting
 - [Bill Tracker](https://github.com/mdrezaulkarim38/BillTracker) — role-based billing and payment tracking
 
@@ -63,7 +64,7 @@ This portfolio itself demonstrates my frontend skills:
 - **AI Work First** — Smart FAQ Chatbot, AI Text Summarizer, AI Email Assistant API
 - **Interactive Skills Grid** — hover to explore C#, ASP.NET Core, React, Semantic Kernel, SQL Server, Docker, Polly/Serilog, Git, REST API
 - **Business Projects + Mock AI Console Demo** — type a topic, generate a sample client email
-- **Experience Timeline** — iTech Velocity + Synergy Interface Ltd
+- **Experience Timeline** — iTech Velocity + Synergy Interface Ltd (Selieo listed separately as personal project)
 - **Contact Section** — Email / GitHub / LinkedIn / Phone / Location
 - **Modern UI:** Tailwind CSS v4, React Icons, Type Animation, responsive layout, fast Vite build
 
